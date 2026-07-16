@@ -111,8 +111,8 @@ export default function Navbar() {
                 <button
                   key={link.id}
                   onClick={() => go(link.id)}
-                  className={`block w-full rounded-lg px-4 py-3 text-left text-sm ${
-                    active === link.id ? 'bg-white/10 text-white' : 'text-slate-300'
+                  className={`block w-full rounded-lg px-4 py-4 text-left text-base ${
+                    active === link.id ? 'bg-white/10 text-white font-medium' : 'text-slate-300'
                   }`}
                 >
                   {link.label}

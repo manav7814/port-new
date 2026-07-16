@@ -29,8 +29,8 @@ export default function ProjectsSection() {
                   loading="lazy"
                   className="aspect-[16/10] w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                <div className="absolute inset-x-0 bottom-0 flex translate-y-6 items-center justify-center gap-3 p-5 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent opacity-100 sm:opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="absolute inset-x-0 bottom-0 flex translate-y-0 sm:translate-y-6 items-center justify-center gap-3 p-5 opacity-100 sm:opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                   <a href={project.live} className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-sky-500 px-4 py-2 text-sm font-semibold text-white shadow-glow">
                     <ExternalLink size={14} /> Live Demo
                   </a>

@@ -30,7 +30,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="mt-6 text-5xl font-bold leading-[1.05] sm:text-6xl md:text-7xl lg:text-8xl"
+          className="mt-6 text-4xl font-bold leading-[1.1] sm:text-6xl md:text-7xl lg:text-8xl"
         >
           <span className="text-white">Hi, I&apos;m </span>
           <span className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-sky-300 bg-clip-text text-transparent">
@@ -42,7 +42,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.25 }}
-          className="mt-6 text-xl font-medium text-purple-100 sm:text-2xl md:text-3xl"
+          className="mt-6 text-lg font-medium text-purple-100 sm:text-2xl md:text-3xl"
         >
           MERN Stack Developer &  Web Developer
         </motion.p>
@@ -61,18 +61,18 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.55 }}
-          className="mt-10 flex flex-wrap items-center justify-center gap-4"
+          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
           <button
             onClick={() => scroll('projects')}
-            className="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-sky-500 px-6 py-3 font-semibold text-white shadow-glow transition hover:scale-[1.02]"
+            className="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-2xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-sky-500 px-6 py-3 font-semibold text-white shadow-glow transition hover:scale-[1.02]"
           >
             View Projects
             <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
           </button>
           <button
             onClick={() => scroll('contact')}
-            className="inline-flex items-center gap-2 rounded-2xl glass px-6 py-3 font-semibold text-white transition hover:bg-white/10"
+            className="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-2xl glass px-6 py-3 font-semibold text-white transition hover:bg-white/10"
           >
             Hire Me
           </button>
