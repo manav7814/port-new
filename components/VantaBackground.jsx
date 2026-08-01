@@ -29,13 +29,13 @@ const VantaBackground = () => {
             minHeight: 200.00,
             minWidth: 200.00,
             scale: 1.00,
-            scaleMobile: 2.00,
+            scaleMobile: 3.00,
             birdSize: 1.50,
             backgroundColor: 0x000000,
             backgroundAlpha: 0,
             color1: 0xa855f7,
             color2: 0x3b82f6,
-            quantity: 4.00
+            quantity: 3.00
           });
         }
       } catch (error) {
@@ -57,7 +57,12 @@ const VantaBackground = () => {
     <div
       ref={myRef}
       className="fixed inset-0 z-[1] h-full w-full pointer-events-none"
-      style={{ minHeight: '100vh', width: '100vw' }}
+      style={{ 
+        minHeight: '100vh', 
+        width: '100vw', 
+        transform: 'translateZ(0)', 
+        willChange: 'transform' 
+      }}
     ></div>
   );
 };
