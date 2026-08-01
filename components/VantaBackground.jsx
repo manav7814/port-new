@@ -13,8 +13,13 @@ const VantaBackground = () => {
         window.THREE = THREE;
         
         const vantaModule = await import("vanta/dist/vanta.birds.min");
-        const BIRDS = vantaModule.default || window.VANTA.BIRDS;
+        const BIRDS = vantaModule.default || (window.VANTA && window.VANTA.BIRDS);
         
+        if (!BIRDS) {
+          console.error("Vanta BIRDS module not found");
+          return;
+        }
+
         if (!vantaEffectRef.current && myRef.current) {
           vantaEffectRef.current = BIRDS({
             el: myRef.current,
