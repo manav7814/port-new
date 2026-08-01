@@ -89,7 +89,7 @@ export default function HeroSection() {
               key={s.label}
               href={s.href}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label={s.label}
               className="grid h-11 w-11 place-items-center rounded-xl glass text-slate-400 transition-all hover:scale-110 hover:text-white hover:shadow-glow"
             >

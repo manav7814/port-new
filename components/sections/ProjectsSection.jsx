@@ -31,10 +31,10 @@ export default function ProjectsSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent opacity-100 sm:opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="absolute inset-x-0 bottom-0 flex translate-y-0 sm:translate-y-6 items-center justify-center gap-3 p-5 opacity-100 sm:opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                  <a href={project.live} className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-sky-500 px-4 py-2 text-sm font-semibold text-white shadow-glow">
+                  <a href={project.live} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-sky-500 px-4 py-2 text-sm font-semibold text-white shadow-glow">
                     <ExternalLink size={14} /> Live Demo
                   </a>
-                  <a href={project.github} className="inline-flex items-center gap-2 rounded-xl glass px-4 py-2 text-sm font-semibold text-white">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl glass px-4 py-2 text-sm font-semibold text-white">
                     <Github size={14} /> GitHub
                   </a>
                 </div>

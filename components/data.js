@@ -1,4 +1,4 @@
-import { Code2, Globe, ShieldCheck, Sparkles, BriefcaseBusiness, LayoutDashboard, Smartphone, Link2, Palette, GitBranch, Building2, Plug } from 'lucide-react';
+import { Code2, Globe, ShieldCheck, Sparkles, BriefcaseBusiness, LayoutDashboard, Smartphone, Link2, Palette, GitBranch, Building2, Plug, Bot, BrainCircuit, MousePointer2, Rocket } from 'lucide-react';
 
 export const navItems = [
   ['home', 'Home'],
@@ -24,7 +24,29 @@ export const skills = [
   { name: 'N8N',level:70,icon:Building2},
 ];
 
+export const aiSkills = [
+  { name: 'ChatGPT', level: 95, icon: Bot, color: '#10a37f' },
+  { name: 'Claude AI', level: 90, icon: BrainCircuit, color: '#d97757' },
+  
+  { name: 'Cursor', level: 90, icon: MousePointer2, color: '#ffffff' },
+  { name: 'Antigravity', level: 95, icon: Rocket, color: '#a855f7' },
+];
+
 export const projects = [
+  {
+  title: 'UI Template Engine',
+  sub: 'Professional Online Graphic Editor (Canva Clone)',
+  img: 'https://res.cloudinary.com/di8lxrlph/image/upload/v1785573243/Screenshot_2026-08-01_135926_i3l1kd.png',
+  tags: [
+    'React',
+    'Konva.js',
+    'Redux Toolkit',
+    'Express.js',
+    'MongoDB'
+  ],
+  live: 'https://ui-template-engine-tan.vercel.app',
+  github: 'https://github.com/yourusername/designflow-studio'
+},
   {
     title: 'A1 Distributor LLC',
     sub: 'Logistics & Distribution Company Website',
@@ -43,7 +65,7 @@ export const projects = [
   },
   {
   title: 'Highfield Pharmacy',
-  sub: 'Healthcare, NHS Pharmacy & Travel Clinic',
+  sub: 'Healthcare, NHS Pharmacy & Travel Clinic. It is fully CMS based website with admin panel to manage the content.',
   img: 'https://res.cloudinary.com/di8lxrlph/image/upload/v1784187880/Screenshot_2026-07-16_131354_vp8itf.png',
   tags: ['Next.js', 'Express.js', 'MongoDB'],
   live: 'https://www.highfieldpharmacyclinic.co.uk/',
@@ -66,6 +88,15 @@ export const projects = [
   //   github: '#'
   // },
 
+];
+
+export const experiences = [
+  {
+    role: 'Full Stack Developer',
+    company: 'Skywave Technology Pvt Ltd',
+    duration: 'Present (6 Months)',
+    desc: 'Working as a Full Stack Developer, contributing to various web applications and focusing on building robust, scalable solutions.'
+  }
 ];
 
 export const services = [

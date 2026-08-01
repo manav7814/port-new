@@ -12,6 +12,7 @@ import ExperienceSection from './sections/ExperienceSection';
 import ServicesSection from './sections/ServicesSection';
 import TestimonialsSection from './sections/TestimonialsSection';
 import ContactSection from './sections/ContactSection';
+import VantaBackground from './VantaBackground';
 
 export default function Portfolio() {
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ export default function Portfolio() {
       <Background />
       <div className="noise pointer-events-none fixed inset-0 z-0 opacity-30" />
       <div className="pointer-events-none fixed inset-0 z-0 bg-radial-soft" />
+      <VantaBackground />
       <Navbar />
       <main className="relative z-10">
         <HeroSection />

@@ -10,10 +10,24 @@ export const metadata = {
   }
 };
 
+import VantaBackground from '../components/VantaBackground';
+
+import ClickSpark from '../components/ClickSpark';
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ClickSpark
+          sparkColor="#ffffff"
+          sparkSize={24}
+          sparkRadius={40}
+          sparkCount={6}
+          duration={600}
+        >
+          {children}
+        </ClickSpark>
+      </body>
     </html>
   );
 }
