@@ -29,7 +29,7 @@ const VantaBackground = () => {
             minHeight: 200.00,
             minWidth: 200.00,
             scale: 1.00,
-            scaleMobile: 1.00,
+            scaleMobile: 2.00,
             birdSize: 1.50,
             backgroundColor: 0x000000,
             backgroundAlpha: 0,
